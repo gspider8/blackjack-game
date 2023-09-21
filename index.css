@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    color: gold;
+    color: goldenrod;
     font-size: 4.5rem;
 }
 p {
@@ -16,4 +16,18 @@ p {
 }
 #message-el {
     font-style: italic;
+}
+
+button {
+    background-color: goldenrod;
+    border: 0;
+    width: 380px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #016f32;
+    font-weight: bold;
+}
+button:hover {
+    cursor: pointer;
 }
