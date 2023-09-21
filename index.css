@@ -1,0 +1,19 @@
+body {
+    background-image: url("images/table.png");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+h1 {
+    color: gold;
+    font-size: 4.5rem;
+}
+p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#message-el {
+    font-style: italic;
+}
