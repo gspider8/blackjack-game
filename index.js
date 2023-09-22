@@ -14,9 +14,7 @@ function startGame() {
 }
 
 function renderGame() {
-    // render out pre
     cardsEl.textContent = "Cards:"
-    //render out ALL cards that we have
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += " " + cards[i]
     }    
@@ -37,7 +35,6 @@ function renderGame() {
 function newCard() {
     let card = 6
     sum += card
-    // Push the card to the cards array
     cards.push(card)
     renderGame()
 }
