@@ -6,10 +6,10 @@ let sum = 0
 let hasBlackJack = false
 let isAlive = false
 let message = ""
-let messageEl = document.getElementById("message-el")
-let sumEl = document.getElementById("sum-el")
-let cardsEl = document.getElementById("cards-el")
-let playerEl = document.getElementById("player-el")
+const messageEl = document.getElementById("message-el")
+const sumEl = document.getElementById("sum-el")
+const cardsEl = document.getElementById("cards-el")
+const playerEl = document.getElementById("player-el")
 playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
@@ -27,15 +27,15 @@ function getRandomCard() {
 
 function startGame() {
     isAlive = true
-    cards = [getRandomCard(), getRandomCard()];
-    sum = cards[0] + cards[1]
+    cardArr = [getRandomCard(), getRandomCard()];
+    sum = cardArr[0] + cardArr[1]
     renderGame()
 }
 
 function renderGame() {
     cardsEl.textContent = "Cards:"
-    for (let i = 0; i < cards.length; i++) {
-        cardsEl.textContent += " " + cards[i]
+    for (let i = 0; i < cardArr.length; i++) {
+        cardsEl.textContent += " " + cardArr[i]
     }    
     sumEl.textContent = "Sum: " + sum
     if (sum <= 20) {
@@ -55,7 +55,7 @@ function newCard() {
     if (isAlive === true && hasBlackJack === false) {
         let card = getRandomCard()
         sum += card
-        cards.push(card)
+        cardArr.push(card)
         renderGame()
     } 
 }
